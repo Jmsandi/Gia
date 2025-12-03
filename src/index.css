@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Custom Scrollbar Styles */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print Watermark - Hidden by default */
+.print-watermark {
+  display: none;
+}
+
+/* Print Styles */
+@media print {
+  /* Show watermark only when printing - appears on every page */
+  .print-watermark {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+  }
+
+  .print-watermark img {
+    max-width: 400px !important;
+    max-height: 400px !important;
+    width: auto !important;
+    height: auto !important;
+    opacity: 0.08 !important;
+    object-fit: contain !important;
+    filter: grayscale(100%) !important;
+  }
+
+  /* Remove all shadows for print */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+
+  /* Adjust page margins */
+  @page {
+    margin: 1cm;
+  }
+
+  /* Prevent page breaks inside events */
+  .border-b {
+    page-break-inside: avoid;
+  }
+}
