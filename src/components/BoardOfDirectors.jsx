@@ -9,7 +9,7 @@ const BoardOfDirectors = () => {
           <div className="w-24 h-1 bg-[#00c853] mx-auto"></div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+        <div className="bg-white rounded-lg  p-8 md:p-12">
           <div className="prose max-w-none">
             <h2 className="text-2xl font-bold text-[#1a2456] mb-6">School Administration</h2>
             <p className="text-gray-700 leading-relaxed mb-6">

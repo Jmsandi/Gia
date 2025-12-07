@@ -828,7 +828,14 @@ const Prospectus = () => {
               className="demo-book"
             >
               {pages.map((page, index) => (
-                <div key={index} className="page bg-white border border-gray-300 shadow-lg overflow-y-auto" style={{ height: '100%' }}>
+                <div
+                  key={index}
+                  className="page bg-white border border-gray-300 shadow-lg overflow-y-auto select-none"
+                  style={{ height: '100%' }}
+                  onContextMenu={(e) => e.preventDefault()}
+                  onCopy={(e) => e.preventDefault()}
+                  onCut={(e) => e.preventDefault()}
+                >
                   {page.content}
                 </div>
               ))}

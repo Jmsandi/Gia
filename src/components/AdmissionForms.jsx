@@ -9,7 +9,7 @@ const AdmissionForms = () => {
           <div className="w-24 h-1 bg-[#00c853] mx-auto"></div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+        <div className="bg-white rounded-lg  p-8 md:p-12">
           <div className="prose max-w-none">
             <p className="text-gray-700 leading-relaxed mb-8">
               Download the appropriate admission form for your child's grade level. Please fill out the form

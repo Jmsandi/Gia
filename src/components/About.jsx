@@ -1,3 +1,7 @@
+import schoolBuilding from '../assets/schoolbuilding.png?url';
+import ictLab from '../assets/ICTlab.jpg?url';
+import administration from '../assets/administration.png?url';
+
 const About = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -18,9 +22,28 @@ const About = () => {
           <p className="text-gray-700 leading-relaxed mb-6">
             Our dedication to nurturing young minds and fostering a love for learning remains unwavering. Today, we take pride in being a top institution preparing students for success in a constantly evolving world.
           </p>
-          <p className="text-gray-700 leading-relaxed">
+
+          {/* School Building Image */}
+          <div className="my-8">
+            <img
+              src={schoolBuilding}
+              alt="Gbonkolenken International Academy School Building"
+              className="w-full rounded-lg shadow-lg"
+            />
+          </div>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
             A sturdy fence encloses the school. It features a three-story building with thirty classrooms, an expanded administrative wing, a learning resource center/library, a science lab, an ICT room, and a kindergarten playground. It benefits from 24/7 electricity, reliable internet, dependable, safe drinking water, and modern sanitation facilities.
           </p>
+
+          {/* ICT Lab Image */}
+          <div className="my-8">
+            <img
+              src={ictLab}
+              alt="ICT Laboratory"
+              className="w-full rounded-lg shadow-lg"
+            />
+          </div>
         </div>
 
         {/* School Administration */}
@@ -28,6 +51,16 @@ const About = () => {
           <h2 className="text-3xl font-bold text-[#1a2456] mb-6">
             School Administration
           </h2>
+
+          {/* Administration Image */}
+          <div className="mb-6">
+            <img
+              src={administration}
+              alt="School Administration"
+              className="w-full rounded-lg shadow-lg"
+            />
+          </div>
+
           <p className="text-gray-700 leading-relaxed">
             The School Administration functions within a hierarchical structure, with the owners of the institution at the top of decision-making. The Board Members play a key role in recruiting staff, managing the school budget, and overseeing the school's progress and growth. Key personnel also include the Director, Principal, Vice Principal, Senior Administrator/Counselor, and Finance Officer/HR, all of whom are responsible for managing daily school operations.
           </p>
