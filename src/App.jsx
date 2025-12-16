@@ -14,6 +14,7 @@ import TuitionCharges from './components/TuitionCharges'
 import Announcements from './components/Announcements'
 import ActivitiesEvents from './components/ActivitiesEvents'
 import Prospectus from './components/Prospectus'
+import ContactUs from './components/ContactUs'
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/proprietor" element={<ProprietorWelcome />} />
           <Route path="/about" element={<About />} />
           <Route path="/principal-staff" element={<PrincipalStaff />} />
+          <Route path="/contact-us" element={<ContactUs />} />
 
           {/* Admissions Pages */}
           <Route path="/admissions" element={<Admissions />} />

@@ -13,7 +13,8 @@ const Navbar = () => {
       items: [
         { name: 'Proprietor', path: '/proprietor' },
         { name: 'About', path: '/about' },
-        { name: 'Principal and Staff', path: '/principal-staff' }
+        { name: 'Principal and Staff', path: '/principal-staff' },
+        { name: 'Contact Us', path: '/contact-us' }
       ]
     },
     {
