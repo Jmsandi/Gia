@@ -31,11 +31,11 @@ const Footer = () => {
                   About
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/board-of-directors" className="hover:text-[#00c853] transition-colors">
                   Board of Directors
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="/principal-staff" className="hover:text-[#00c853] transition-colors">
                   Principal & Staff

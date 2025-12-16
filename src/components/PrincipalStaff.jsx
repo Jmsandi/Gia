@@ -2,6 +2,7 @@
 import KarankayKoroma from '../assets/staff/Karankay_Koroma.png?url';
 import RaymondTholley from '../assets/staff/Raymond_Tholley.png?url';
 import AaronKargbo from '../assets/staff/Aaron_Kargbo.png?url';
+import AbdulAlpha from '../assets/staff/Abdul_Alpha.png?url';
 import AbubakarrKoroma from '../assets/staff/Abubakarr_koroma.png?url';
 import AgnesMarah from '../assets/staff/Agnes_Marah.png?url';
 import AjaraKalokoh from '../assets/staff/Ajara_Kalokoh.png?url';
@@ -11,12 +12,14 @@ import DollyKargbo from '../assets/staff/Dolly_Kargbo.png?url';
 import ElizabethTarawalie from '../assets/staff/Elizabeth_Tarawalie.png?url';
 import FortuneMensah from '../assets/staff/Fortune_Mensah.png?url';
 import JaneKaruna from '../assets/staff/Jane_Karuna.png?url';
+import JosephKamara from '../assets/staff/Joseph_Kamara.png?url';
 import MabintyKanu from '../assets/staff/Mabinty_kanu.png?url';
 import MariamaKalokoh from '../assets/staff/Mariama_kalokoh.png?url';
 import MartinBangura from '../assets/staff/Martin_Bangura.png?url';
 import MohammedThullah from '../assets/staff/mohammed_thullah.png?url';
 import MusaKoroma from '../assets/staff/Musa_koroma.png?url';
 import MustaphaTholley from '../assets/staff/Mustapha_Tholley.png?url';
+import MustaphaKamara from '../assets/staff/Mustapha_Kamara.png?url';
 import SantigieKamara from '../assets/staff/Santigie_Kamara.png?url';
 import TheresaLuseni from '../assets/staff/Theresa_Luseni.png?url';
 import VictorMichael from '../assets/staff/Victor_Michael.png?url';
@@ -24,21 +27,24 @@ import VictorMichael from '../assets/staff/Victor_Michael.png?url';
 const PrincipalStaff = () => {
   const staffMembers = [
     { name: 'Aaron J. Kargbo', image: AaronKargbo, position: 'Teacher' },
+    { name: 'Abdul Alpha', image: AbdulAlpha, position: 'Teacher' },
     { name: 'Abubakarr Sidique Koroma', image: AbubakarrKoroma, position: 'Teacher' },
     { name: 'Agnes Marah', image: AgnesMarah, position: 'Teacher' },
     { name: 'Ajara Kalokoh', image: AjaraKalokoh, position: 'Teacher' },
-    { name: 'Allimamy Today Kamara', image: AlliamyKamara, position: 'Teacher' },
+    { name: 'Alimamy Foday Kamara', image: AlliamyKamara, position: 'Teacher' },
     { name: 'David Kamara', image: DavidKamara, position: 'IT Specialist' },
     { name: 'Dolly Henry Kargbo', image: DollyKargbo, position: 'Teacher' },
     { name: 'Elizabeth W. Tarawalie', image: ElizabethTarawalie, position: 'Teacher' },
     { name: 'Fortune Todemey Mensah', image: FortuneMensah, position: 'Administrator & Counsellor' },
-    { name: 'Jane Karuna', image: JaneKaruna, position: 'Teacher' },
+    { name: 'Jane Aruna', image: JaneKaruna, position: 'Teacher' },
+    { name: 'Joseph Kamara', image: JosephKamara, position: 'Teacher' },
     { name: 'Mabinty S. Kanu', image: MabintyKanu, position: 'Teacher' },
     { name: 'Mariama Kalokoh', image: MariamaKalokoh, position: 'Finance' },
     { name: 'Martin O. Bangura', image: MartinBangura, position: 'Teacher' },
     { name: 'Mohammed K. Thullah', image: MohammedThullah, position: 'Teacher' },
     { name: 'Musa Koroma', image: MusaKoroma, position: 'Teacher' },
-    { name: 'Mustapha S. Tholley', image: MustaphaTholley, position: 'Teacher' },
+    { name: 'Mustapha Kamara', image: MustaphaKamara, position: 'Teacher' },
+    { name: 'Sulaiman Tholley', image: MustaphaTholley, position: 'Teacher' },
     { name: 'Santigie A. Kamara', image: SantigieKamara, position: 'Teacher' },
     { name: 'Theresa Luseni', image: TheresaLuseni, position: 'Teacher' },
     { name: 'Victor Michael', image: VictorMichael, position: 'IT Specialist' },

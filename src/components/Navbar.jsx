@@ -13,7 +13,6 @@ const Navbar = () => {
       items: [
         { name: 'Proprietor', path: '/proprietor' },
         { name: 'About', path: '/about' },
-        { name: 'Board of Directors', path: '/board-of-directors' },
         { name: 'Principal and Staff', path: '/principal-staff' }
       ]
     },
@@ -66,15 +65,17 @@ const Navbar = () => {
       <div className="bg-[#1a2456] py-2">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <Link to="/" className="flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity">
             <img src={logo} alt="GIA Logo" className="h-20 w-20 sm:h-24 sm:w-24" />
-          </div>
+          </Link>
 
           {/* School Name */}
           <div className="flex-1 text-center px-4">
-            <h1 className="text-white text-sm sm:text-lg md:text-2xl lg:text-3xl font-bold">
-              GBONKOLENKEN INTERNATIONAL ACADEMY MAKENI - SL
-            </h1>
+            <Link to="/" className="hover:opacity-90 transition-opacity">
+              <h1 className="text-white text-sm sm:text-lg md:text-2xl lg:text-3xl font-bold">
+                GBONKOLENKEN INTERNATIONAL ACADEMY MAKENI - SL
+              </h1>
+            </Link>
           </div>
 
           {/* Map */}

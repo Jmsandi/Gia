@@ -6,7 +6,6 @@ import NewsEvents from './components/NewsEvents'
 import Footer from './components/Footer'
 import Calendar from './components/Calendar'
 import About from './components/About'
-import BoardOfDirectors from './components/BoardOfDirectors'
 import PrincipalStaff from './components/PrincipalStaff'
 import AcademicPrograms from './components/AcademicPrograms'
 import Admissions from './components/Admissions'
@@ -42,7 +41,6 @@ function App() {
           {/* About Pages */}
           <Route path="/proprietor" element={<ProprietorWelcome />} />
           <Route path="/about" element={<About />} />
-          <Route path="/board-of-directors" element={<BoardOfDirectors />} />
           <Route path="/principal-staff" element={<PrincipalStaff />} />
 
           {/* Admissions Pages */}
