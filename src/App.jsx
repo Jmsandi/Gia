@@ -15,6 +15,8 @@ import Announcements from './pages/Announcements'
 import ActivitiesEvents from './pages/ActivitiesEvents'
 import Prospectus from './pages/Prospectus'
 import ContactUs from './pages/ContactUs'
+import NewsDetail from './pages/NewsDetail'
+import Admin from './pages/Admin'
 
 function App() {
   return (
@@ -54,12 +56,17 @@ function App() {
           <Route path="/curriculum" element={<AcademicPrograms />} />
 
           {/* News & Events Pages */}
+          <Route path="/news-events" element={<NewsEvents />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
           <Route path="/announcements" element={<Announcements />} />
           <Route path="/activities-events" element={<ActivitiesEvents />} />
 
           {/* Students/Parents Pages */}
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/student-handbook" element={<Prospectus />} />
+
+          {/* Admin */}
+          <Route path="/admin" element={<Admin />} />
         </Routes>
 
         <div className="print:hidden">

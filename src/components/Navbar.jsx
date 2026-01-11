@@ -34,6 +34,7 @@ const Navbar = () => {
     {
       title: 'News & Events',
       items: [
+        { name: 'Latest News & Events', path: '/news-events' },
         { name: 'Announcement', path: '/announcements' },
         { name: 'School Activities/Events', path: '/activities-events' }
       ]
@@ -99,11 +100,10 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <button
-                  className={`px-4 py-4 text-base font-bold transition-colors ${
-                    item.isGreen
+                  className={`px-4 py-4 text-base font-bold transition-colors ${item.isGreen
                       ? 'text-[#00c853] hover:text-[#00e676]'
                       : 'text-[#1a2456] hover:text-[#00c853]'
-                  }`}
+                    }`}
                 >
                   {item.title}
                 </button>
@@ -115,11 +115,10 @@ const Navbar = () => {
                       <Link
                         key={subIndex}
                         to={subItem.path}
-                        className={`group relative block px-6 py-3 font-bold transition-all duration-300 hover:pl-10 ${
-                          item.isGreen
+                        className={`group relative block px-6 py-3 font-bold transition-all duration-300 hover:pl-10 ${item.isGreen
                             ? 'text-[#00c853] hover:bg-gray-100'
                             : 'text-[#1a2456] hover:bg-gray-100'
-                        }`}
+                          }`}
                       >
                         <span className="absolute left-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                           →
@@ -175,18 +174,16 @@ const Navbar = () => {
                     onClick={() =>
                       setActiveDropdown(activeDropdown === index ? null : index)
                     }
-                    className={`w-full text-left px-4 py-3 font-bold flex items-center justify-between ${
-                      item.isGreen
+                    className={`w-full text-left px-4 py-3 font-bold flex items-center justify-between ${item.isGreen
                         ? 'text-[#00c853]'
                         : 'text-[#1a2456]'
-                    }`}
+                      }`}
                   >
                     {item.title}
                     {item.items.length > 0 && (
                       <svg
-                        className={`w-5 h-5 transition-transform ${
-                          activeDropdown === index ? 'rotate-180' : ''
-                        }`}
+                        className={`w-5 h-5 transition-transform ${activeDropdown === index ? 'rotate-180' : ''
+                          }`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -208,11 +205,10 @@ const Navbar = () => {
                         <Link
                           key={subIndex}
                           to={subItem.path}
-                          className={`group relative block px-8 py-2 font-semibold transition-all duration-300 hover:pl-12 ${
-                            item.isGreen
+                          className={`group relative block px-8 py-2 font-semibold transition-all duration-300 hover:pl-12 ${item.isGreen
                               ? 'text-[#00c853]'
                               : 'text-[#1a2456]'
-                          }`}
+                            }`}
                         >
                           <span className="absolute left-6 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                             →
